@@ -14,7 +14,7 @@ const skills = [
 export default function Competences() {
   return (
     <div className={styles.page}>
-      <header className={styles.header}><Menu /></header>
+      <header><Menu /></header>
       <main className={styles.main}>
         <section className={styles.section}>
           <p className={styles.eyebrow}>Savoir-faire</p>

@@ -10,5 +10,5 @@
 .education h2 { margin-bottom: 0.5rem; font-size: 1.8rem; }
 .education > p:not(.eyebrow) { margin: 0; color: var(--color-muted); line-height: 1.7; }
 .education strong { color: var(--color-accent); }
-@media (max-width: 680px) { .header, .main { width: min(100% - 2rem, 76rem); } .item { grid-template-columns: 1fr; gap: 0.7rem; padding: 1.5rem 0; } }
+@media (max-width: 680px) { .main { width: min(100% - 2rem, 76rem); } .item { grid-template-columns: 1fr; gap: 0.7rem; padding: 1.5rem 0; } }
 @media (max-width: 380px) { .main h1 { font-size: 2.45rem; } .item h2 { font-size: 1.3rem; } }

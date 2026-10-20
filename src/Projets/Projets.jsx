@@ -19,7 +19,7 @@ const projects = [
 export default function Projets() {
   return (
     <div className={styles.page}>
-      <header className={styles.header}><Menu /></header>
+      <header><Menu /></header>
       <main className={styles.main}>
         <section aria-labelledby="projects-title">
           <p className={styles.eyebrow}>Expérimenter & construire</p>

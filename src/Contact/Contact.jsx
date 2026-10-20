@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 export default function Contact() {
   return (
     <div className={styles.page}>
-      <header className={styles.header}><Menu /></header>
+      <header><Menu /></header>
       <main className={styles.main}>
         <section className={styles.profile} aria-labelledby="contact-title">
           <p className={styles.eyebrow}>Échangeons</p>

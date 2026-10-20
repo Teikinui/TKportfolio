@@ -35,7 +35,7 @@ const experiences = [
 export default function Parcours() {
   return (
     <div className={styles.page}>
-      <header className={styles.header}><Menu /></header>
+      <header><Menu /></header>
       <main className={styles.main}>
         <section aria-labelledby="parcours-title">
           <p className={styles.eyebrow}>Expériences & formation</p>

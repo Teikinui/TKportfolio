@@ -20,7 +20,9 @@
 html { min-width: 320px; scroll-behavior: smooth; }
 body { min-width: 320px; min-height: 100vh; margin: 0; overflow-x: clip; }
 body, button, a { font-family: inherit; }
+header { width: min(100% - 3rem, 76rem); margin-inline: auto; }
 img { display: block; max-width: 100%; }
 ::selection { color: #171511; background: var(--color-accent); }
 :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
+@media (max-width: 700px) { header { width: min(100% - 2rem, 76rem); } }
