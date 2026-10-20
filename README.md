@@ -1,16 +1,28 @@
-# React + Vite
+# Portfolio — Teikinui Decian
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel construit avec React et Vite. Il présente mon profil, mes compétences, mon parcours, mes projets et les moyens de me contacter.
 
-Currently, two official plugins are available:
+## Démarrer en local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Vérifications
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run lint
+npm run build
+```
 
-## Expanding the ESLint configuration
+## Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/Accueil` : présentation et page d’accueil
+- `src/Competences` : compétences techniques
+- `src/Parcours` : expériences et formation
+- `src/Projets` : projets personnels
+- `src/Contact` : coordonnées de contact
+- `src/Menu` : navigation partagée
+- `src/components` : composants réutilisables
+- `public` : ressources statiques, dont la photo de profil

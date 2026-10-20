@@ -1,64 +1,38 @@
 .page {
   min-height: 100vh;
+  background: var(--color-paper);
+}
+.header, .main { width: min(100% - 3rem, 76rem); margin: 0 auto; }
+.hero { min-height: min(72vh, 44rem); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(15rem, 0.75fr); align-items: center; gap: clamp(2rem, 7vw, 7rem); padding: clamp(3rem, 8vw, 7rem) 0; }
+.copy { max-width: 43rem; }
+.eyebrow, .note { color: var(--color-muted); font-size: 0.88rem; line-height: 1.6; }
+.eyebrow { display: flex; align-items: center; gap: 0.65rem; margin: 0 0 1.5rem; }
+.eyebrow span { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--color-accent); }
+.copy h1, .section h1, .profile h1 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.8rem, 6vw, 5.8rem); font-weight: 400; line-height: 1.04; letter-spacing: -0.045em; text-wrap: balance; }
+.copy h1 span { color: var(--color-accent); font-style: italic; }
+.description { max-width: 37rem; margin: 1.6rem 0 0; color: var(--color-muted); font-size: 1.08rem; line-height: 1.8; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.4rem; margin-top: 2rem; }
+.actions a { display: inline-flex; min-height: 2.75rem; align-items: center; gap: 0.6rem; color: var(--color-ink); font-weight: 600; text-decoration: none; }
+.actions a:first-child { padding: 0.8rem 1.1rem; border: 1px solid var(--color-button); border-radius: 0.25rem; background: var(--color-button); color: var(--color-button-ink); }
+.actions a:first-child:hover { border-color: var(--color-accent); background: var(--color-accent); color: var(--color-button-ink); }
+.note { margin-top: 2rem; }
+.portrait { position: relative; max-width: 22rem; margin: 0 auto; }
+.portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; filter: saturate(0.82); border-radius: 2px; }
+.portrait figcaption { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 0.25rem; padding-top: 1rem; }
+.portrait figcaption span:first-child { font-family: Georgia, 'Times New Roman', serif; font-size: 1.25rem; }
+.portrait figcaption span:last-child { color: var(--color-muted); font-size: 0.83rem; }
+.highlights { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1.3rem 0; border-top: 1px solid var(--color-line); color: var(--color-muted); font-size: 0.78rem; letter-spacing: 0.04em; }
+@media (max-width: 700px) {
+  .header, .main { width: min(100% - 2rem, 76rem); }
+  .hero { min-height: auto; grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 0 3rem; }
+  .copy h1 { font-size: clamp(2.5rem, 11vw, 4rem); }
+  .description { font-size: 1rem; }
+  .portrait { width: min(75%, 18rem); }
+  .highlights { flex-direction: column; gap: 0.65rem; }
 }
 
-.header {
-  width: min(100% - 2rem, 70rem);
-  margin: 0 auto;
-}
-
-.main {
-  min-height: calc(100vh - 5rem);
-  display: grid;
-  place-items: center;
-  padding: 2rem 1rem;
-}
-
-.profile {
-  width: min(100%, 32rem);
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #2563eb;
-  color: #fff;
-  border-radius: 0.75rem;
-  box-shadow: 0 1rem 2rem rgb(0 0 0 / 12%);
-}
-.photo_profil {
-    width: min(20vh, 10rem);
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-.div_milieu {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-}
-.div_background {
-    width: min(100%, 70rem);
-    padding: clamp(1.5rem, 5vw, 3.125rem);
-    background-color: white;
-    border-radius: 20px;
-}
-.div_description {
-    max-width: 30rem;
-    margin-left: 0;
-}
-
-@media (max-width: 600px) {
-    .div_milieu {
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .div_description {
-        max-width: 100%;
-    }
-}
-
-.introduction {
-    margin-top: 0;
-    font-size: 1.35rem;
-    font-weight: 700;
+@media (max-width: 380px) {
+  .copy h1 { font-size: 2.35rem; }
+  .actions { align-items: stretch; flex-direction: column; gap: 0.6rem; }
+  .actions a:first-child { justify-content: center; }
 }

@@ -1,14 +1,4 @@
-.link {
-  color: #4b5563;
-  text-decoration: none;
-}
-
-.link:hover,
-.link:focus-visible,
-.active {
-  color: #111827;
-}
-
-.active {
-  font-weight: 600;
-}
+.link { min-height: 44px; display: inline-flex; align-items: center; color: var(--color-muted); font-size: 0.88rem; text-decoration: none; transition: color 160ms ease; }
+.link:hover, .link:focus-visible, .active { color: var(--color-accent); }
+.active { font-weight: 600; }
+.link:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
