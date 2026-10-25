@@ -1,5 +1,6 @@
-"homepage": "https://teikinui.github.io/TKportfolio",
+
 {
+  "homepage": "https://teikinui.github.io/TKportfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
