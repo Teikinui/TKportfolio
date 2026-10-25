@@ -11,6 +11,7 @@ export default function Contact() {
           <h1 id="contact-title">Un projet, une opportunité ?</h1>
           <p>Je suis ouvert aux échanges autour du cloud, des infrastructures et des systèmes. Vous pouvez me joindre par e-mail ou retrouver mon parcours professionnel sur LinkedIn.</p>
           <div className={styles.links}>
+            <a href="/CV/Teikinui_DECIAN_CLOUD_CV.pdf" download="Teikinui_Decian_CV.pdf">Télécharger mon CV <span aria-hidden="true">↓</span></a>
             <a href="mailto:teikinui.decian@gmail.com">M’écrire un e-mail <span aria-hidden="true">↗</span></a>
             <a href="https://www.linkedin.com/in/teikinui-decian" target="_blank" rel="noreferrer">Mon profil LinkedIn <span aria-hidden="true">↗</span></a>
           </div>

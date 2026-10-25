@@ -7,8 +7,9 @@ const skills = [
   { title: 'Systèmes & virtualisation', text: 'Administration systèmes et réseaux, Hyper-V, VMware, Proxmox.' },
   { title: 'Automatisation', text: 'PowerShell, Bash, Python, Rundeck et n8n.' },
   { title: 'Conteneurisation', text: 'Docker, services auto-hébergés et accès distant sécurisé.' },
-  { title: 'Développement web', text: 'HTML, CSS, JavaScript et React — notamment pour ce portfolio.' },
+  { title: 'Développement web', text: 'HTML, CSS, JavaScript, React.' },
   { title: 'Support & exploitation', text: 'Support N1/N2, suivi des alertes, analyse de logs et maintien en condition opérationnelle.' },
+  { title: 'IA', text: 'Codex, Hermes, Pi Code Agent, ChatGPT.' },
 ];
 
 export default function Competences() {

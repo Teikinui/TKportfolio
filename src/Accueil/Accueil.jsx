@@ -15,6 +15,9 @@ export default function Accueil() {
             <div className={styles.actions}>
               <NavLink to="/projets">Découvrir mes projets <span aria-hidden="true">↗</span></NavLink>
               <NavLink to="/contact">Me contacter</NavLink>
+              <a className={styles.downloadLink} href="/CV/Teikinui_DECIAN_CLOUD_CV.pdf" download="Teikinui_Decian_CV.pdf">
+                Télécharger mon CV <span aria-hidden="true">↓</span>
+              </a>
             </div>
             <p className={styles.note}>Actuellement en recherche d’une alternance DevOps / Infrastructure Cloud — janvier 2027.</p>
           </div>
